@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Inventory</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	
+</script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>Please Insert Values</h2>
+		<div class="form-group">
+			<form action="/bookinsert" method="POST">
+				<div class="form-group">
+					<label for="author">Author:</label> <input type="text"
+						class="form-control" name="author" placeholder="Enter Author"
+						required="true">
+				</div>
+				<div class="form-group">
+					<label for="title">Title:</label> <input type="text"
+						class="form-control" name="title" placeholder="Enter Title"
+						required="true">
+				</div>
+				<div class="form-group">
+					<label for="edition">Edition:</label> <input type="text"
+						class="form-control" name="edition" placeholder="Enter Edition"
+						required="true">
+				</div>
+
+				<div class="form-group">
+					<label for="genre">Genre:</label> <input type="text"
+						class="form-control" name="genre" placeholder="Enter Genre"
+						required="true">
+				</div>
+				<button type="submit" class="btn btn-success">Submit</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
